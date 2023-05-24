@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KemptonParkAog</string>
+    <string name="welcome_message">Welcome to</string>
+    <string name="church_name">Kempton Park</string>
+    <string name="assemblies_of_God">Assemblies of God</string>
+    <string name="bible_verse">1 Timothy 2:5</string>
+    <string name="bible_verse_description">For there is one God and one mediator between God and mankind, the man Christ Jesus</string>
+    <string name="aog_btg">AOG BTG</string>
+    <string name="church_logo">Church logo</string>
+    <string name="connect_message">Coming in for the first time? Let\'s connect</string>
+    <string name="connect">Let\'s connect</string>
+    <string name="connect2">first</string>
+    <string name="login">Login</string>
+
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text styles -->
+
+    <!-- small text styles -->
+    <style name="SmallText" parent="Default_Text">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="SmallTextMedium" parent="Medium_Text">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="SmallTextBold" parent="Bold_Text">
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <!-- normal text styles -->
+    <style name="NormalText" parent="Default_Text">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="NormalTextMedium" parent="Medium_Text">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <style name="NormalTextBold" parent="Bold_Text">
+        <item name="android:textSize">@dimen/normal_text_size</item>
+    </style>
+
+    <!-- large text styles -->
+    <style name="LargeText" parent="Normal_Text">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="MediumLargeText" parent="Medium_Text">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="BoldLargeText" parent="Bold_Text">
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <!-- heading text styles -->
+    <style name="HeadingText" parent="Normal_Text">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="MediumHeadingText" parent="Medium_Text">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <style name="HeadingTextBold" parent="Bold_Text">
+        <item name="android:textSize">@dimen/heading_text_size</item>
+    </style>
+
+    <!-- title text style -->
+    <style name="TitleTextBold" parent="Bold_Text">
+        <item name="android:textSize">@dimen/title_text_size</item>
+    </style>
+
+
+    <style name="Default_Text">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">serif</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
+    <style name="Normal_Text" parent="Default_Text">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Medium_Text" parent="Default_Text">
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="Bold_Text" parent="Default_Text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="DefaultButton" parent="BoldLargeText">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginBottom">@dimen/medium_space</item>
+        <item name="android:layout_marginStart">@dimen/medium_space</item>
+        <item name="android:layout_marginEnd">@dimen/medium_space</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>
