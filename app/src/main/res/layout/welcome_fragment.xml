@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        style="@style/MediumHeadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginTop="@dimen/extra_large_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:text="@string/welcome_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/kemptonParkTextView"
+        style="@style/TitleTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:text="@string/church_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView" />
+
+    <TextView
+        android:id="@+id/assembliesOfGodTextView"
+        style="@style/HeadingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:text="@string/assemblies_of_God"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kemptonParkTextView" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="368dp" />
+
+    <View
+        android:id="@+id/fadedLineView"
+        android:layout_width="1dp"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginStart="@dimen/start_margin"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/ic_faded_line"
+        app:layout_constraintBottom_toTopOf="@+id/aogBtgTextView"
+        app:layout_constraintStart_toStartOf="@+id/welcomeTextView" />
+
+    <TextView
+        android:id="@+id/aogBtgTextView"
+        style="@style/SmallTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tiny_space"
+        android:rotation="270"
+        android:text="@string/aog_btg"
+        app:layout_constraintBottom_toTopOf="@+id/churchLogoView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline" />
+
+    <ImageView
+        android:id="@+id/churchLogoView"
+        android:layout_width="0dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginTop="@dimen/extra_extra_large_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:contentDescription="@string/church_logo"
+        android:src="@mipmap/aog_btg_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/assembliesOfGodTextView" />
+
+    <TextView
+        android:id="@+id/bibleVerseTextView"
+        style="@style/TitleTextBold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_space"
+        android:text="@string/bible_verse"
+        android:textSize="@dimen/heading_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/churchLogoView" />
+
+    <TextView
+        android:id="@+id/bibleVerseDescriptionTextView"
+        style="@style/LargeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_space"
+        android:layout_marginTop="@dimen/small_space"
+        android:layout_marginEnd="@dimen/medium_space"
+        android:text="@string/bible_verse_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bibleVerseTextView" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="156dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/medium_space"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttons"
+        android:drawableEnd="@drawable/baseline_arrow_forward"
+        android:padding="@dimen/medium_space"
+        android:text="@string/login"
+        app:flow_verticalBias="1"
+        app:layout_constraintBottom_toTopOf="@+id/connectTextView"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/connectTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_space"
+        android:text="@string/connect_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
