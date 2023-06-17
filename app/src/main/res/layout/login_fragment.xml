@@ -1,29 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="@color/off_white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginConstraintLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="@dimen/medium_space"
-        android:paddingBottom="@dimen/extra_large_space"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <include
             android:id="@+id/loginLayout"
-            layout="@layout/login"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="0dp" />
+            layout="@layout/login" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline"
@@ -34,9 +28,9 @@
 
         <ImageView
             android:id="@+id/emailImageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginBottom="136dp"
+            android:layout_width="@dimen/double_large_space"
+            android:layout_height="@dimen/double_large_space"
+            android:layout_marginBottom="@dimen/email_margin_bottom"
             android:contentDescription="@string/email_logo"
             android:src="@mipmap/ic_gmail_logo"
             app:layout_constraintBottom_toBottomOf="@+id/loginLayout"
@@ -44,10 +38,10 @@
 
         <ImageView
             android:id="@+id/facebookImageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/double_large_space"
+            android:layout_height="@dimen/double_large_space"
             android:layout_marginStart="@dimen/medium_space"
-            android:layout_marginBottom="78dp"
+            android:layout_marginBottom="@dimen/facebook_margin_bottom"
             android:contentDescription="@string/facebook_logo"
             android:src="@mipmap/ic_facebook_logo"
             app:layout_constraintBottom_toBottomOf="@+id/loginLayout"
@@ -55,10 +49,10 @@
 
         <ImageView
             android:id="@+id/whatsAppImageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="@dimen/double_large_space"
+            android:layout_height="@dimen/double_large_space"
             android:layout_marginStart="@dimen/medium_space"
-            android:layout_marginBottom="17dp"
+            android:layout_marginBottom="@dimen/whatsapp_margin_bottom"
             android:contentDescription="@string/whatsapp_logo"
             android:src="@mipmap/ic_whatsapp_logo"
             app:layout_constraintBottom_toBottomOf="@+id/loginLayout"
