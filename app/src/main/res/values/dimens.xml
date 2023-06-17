@@ -14,7 +14,6 @@
     <dimen name="extra_large_space_65">65dp</dimen>
     <dimen name="extra_large_space_80">80dp</dimen>
 
-
     <!-- text sizes -->
     <dimen name="tiny_text_size">10sp</dimen>
     <dimen name="small_text_size">13sp</dimen>
@@ -28,4 +27,15 @@
     <dimen name="line_height">123dp</dimen>
     <dimen name="start_margin">240dp</dimen>
     <dimen name="end_margin">30dp</dimen>
+
+    <!-- AOG logo height -->
+    <dimen name="logo_height">275dp</dimen>
+
+    <!--Login Button width -->
+    <dimen name="login_button_width">156dp</dimen>
+
+    <!--whatapp, email and facebook logo dimensions -->
+    <dimen name="email_margin_bottom">136dp</dimen>
+    <dimen name="facebook_margin_bottom">78dp</dimen>
+    <dimen name="whatsapp_margin_bottom">17dp</dimen>
 </resources>

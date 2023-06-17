@@ -11,5 +11,8 @@
     <string name="connect">Let\'s connect</string>
     <string name="connect2">first</string>
     <string name="login">Login</string>
+    <string name="email_logo">Email logo</string>
+    <string name="facebook_logo">Facebook logo</string>
+    <string name="whatsapp_logo">WhatsApp logo</string>
 
 </resources>

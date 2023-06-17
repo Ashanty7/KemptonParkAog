@@ -10,12 +10,17 @@
         android:name="com.example.kemptonparkaog.WelcomeFragment"
         tools:layout="@layout/welcome_fragment">
 
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
     </fragment>
 
-   <!-- <fragment
+    <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.kemptonparkaog.LoginFragment"
         tools:layout="@layout/login_fragment">
 
-    </fragment>-->
+    </fragment>
 </navigation>

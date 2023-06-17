@@ -1,3 +1,4 @@
+//By Shantell Nkwana
 package com.example.kemptonparkaog
 
 import android.graphics.Typeface
@@ -8,6 +9,7 @@ import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.kemptonparkaog.databinding.WelcomeFragmentBinding
 
 class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
@@ -45,5 +47,8 @@ class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
 
     private fun setOnclickListeners() {
 
+        binding.loginButton.setOnClickListener {
+            findNavController().navigate(R.id.action_welcomeFragment_to_loginFragment)
+        }
     }
 }
