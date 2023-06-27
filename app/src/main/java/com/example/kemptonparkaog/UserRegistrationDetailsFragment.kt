@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.kemptonparkaog.databinding.UserRegistrationDetailsFragmentBinding
 
 class UserRegistrationDetailsFragment : Fragment(R.layout.user_registration_details_fragment) {
@@ -43,6 +44,8 @@ class UserRegistrationDetailsFragment : Fragment(R.layout.user_registration_deta
     }
 
     private fun setupOnclickListeners() {
-
+        binding.continueButton.setOnClickListener {
+            findNavController().navigate(R.id.action_userRegistrationFragment_to_userRegistrationConfirmationFragment)
+        }
     }
 }

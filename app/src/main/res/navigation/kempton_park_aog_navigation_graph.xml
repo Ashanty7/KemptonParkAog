@@ -35,5 +35,17 @@
         android:name="com.example.kemptonparkaog.UserRegistrationDetailsFragment"
         tools:layout="@layout/user_registration_details_fragment">
 
+        <action
+            android:id="@+id/action_userRegistrationFragment_to_userRegistrationConfirmationFragment"
+            app:destination="@id/userRegistrationConfirmationFragment"
+            app:popUpTo="@id/userRegistrationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userRegistrationConfirmationFragment"
+        android:name="com.example.kemptonparkaog.UserRegistrationConfirmationFragment"
+        tools:layout="@layout/user_registration_confirmation_fragment">
+
     </fragment>
 </navigation>
