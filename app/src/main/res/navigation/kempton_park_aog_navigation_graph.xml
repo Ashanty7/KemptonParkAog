@@ -32,8 +32,8 @@
 
     <fragment
         android:id="@+id/userRegistrationFragment"
-        android:name="com.example.kemptonparkaog.UserRegistrationFragment"
-        tools:layout="@layout/user_registration_fragment">
+        android:name="com.example.kemptonparkaog.UserRegistrationDetailsFragment"
+        tools:layout="@layout/user_registration_details_fragment">
 
     </fragment>
 </navigation>

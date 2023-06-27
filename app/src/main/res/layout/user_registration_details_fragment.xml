@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/login_logo_height"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:contentDescription="@string/church_logo"
+            android:src="@mipmap/aog_btg_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/extra_large_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Name and Surname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:labelFor="@+id/nameTextView"
+            android:maxLines="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameTextView" />
+
+        <TextView
+            android:id="@+id/contactTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Contact number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
+
+        <EditText
+            android:id="@+id/contactNumberEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:inputType="number"
+            android:labelFor="@+id/emailTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactTextView" />
+
+        <TextView
+            android:id="@+id/emailTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Email Address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactNumberEditText" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:inputType="textEmailAddress"
+            android:labelFor="@+id/emailTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTextView" />
+
+        <TextView
+            android:id="@+id/prayerRequestTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Prayer Request:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <EditText
+            android:id="@+id/prayerRequestEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:labelFor="@+id/prayerRequestTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prayerRequestTextView" />
+
+        <TextView
+            android:id="@+id/genderTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Gender:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prayerRequestEditText" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderTextView" />
+
+        <TextView
+            android:id="@+id/maritalStatusTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:text="Marital Status:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+
+        <Spinner
+            android:id="@+id/maritalStatusSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusTextView" />
+
+        <TextView
+            android:id="@+id/physicalAddressTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Your physical address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusSpinner" />
+
+        <EditText
+            android:id="@+id/physicalAddressNumberEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:labelFor="@+id/emailTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/physicalAddressTextView" />
+
+        <TextView
+            android:id="@+id/visitingStatusTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:text="I am visiting:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/physicalAddressNumberEditText" />
+
+        <RadioGroup
+            android:id="@+id/visitingRadioButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/extra_large_space"
+            android:layout_marginTop="@dimen/small_space"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visitingStatusTextView">
+
+            <RadioButton
+                android:id="@+id/yesVRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/noVRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/homeStatusTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/large_space"
+            android:text="Would like to make KPAOG my spiritual home:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visitingRadioButtons" />
+
+
+        <RadioGroup
+            android:id="@+id/homeRadioButtons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/extra_large_space"
+            android:layout_marginTop="@dimen/small_space"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeStatusTextView">
+
+            <RadioButton
+                android:id="@+id/yesRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/noRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="No" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/medium_space"
+            android:padding="@dimen/medium_space"
+            android:text="Continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeRadioButtons"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
