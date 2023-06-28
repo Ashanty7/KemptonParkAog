@@ -18,9 +18,16 @@ class UserRegistrationDetailsFragment : Fragment(R.layout.user_registration_deta
         super.onViewCreated(view, savedInstanceState)
         binding = UserRegistrationDetailsFragmentBinding.bind(view)
 
+        setupToolBar()
         setupAdapterForGender()
         setupAdapterForMaritalStatus()
         setupOnclickListeners()
+    }
+
+    private fun setupToolBar() {
+        val welcomeActivity = activity as WelcomeActivity
+        welcomeActivity.showToolbar()
+        welcomeActivity.setToolbarTitle("Personal Information")
     }
 
     private fun setupAdapterForGender() {
