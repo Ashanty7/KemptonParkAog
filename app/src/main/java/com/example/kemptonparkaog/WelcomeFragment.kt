@@ -13,16 +13,16 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.text.style.StyleSpan
 import android.view.View
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.kemptonparkaog.databinding.WelcomeFragmentBinding
 
-class WelcomeFragment : Fragment(R.layout.welcome_fragment) {
+class WelcomeFragment : BaseFragment(R.layout.welcome_fragment) {
     private lateinit var binding: WelcomeFragmentBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = WelcomeFragmentBinding.bind(view)
+        welcomeActivity.hideToolBar()
 
         makeTextClickableAndChangeTextColor()
         setOnclickListeners()
