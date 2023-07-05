@@ -1,4 +1,4 @@
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

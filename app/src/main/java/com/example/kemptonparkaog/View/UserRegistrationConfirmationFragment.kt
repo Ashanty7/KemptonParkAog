@@ -2,10 +2,11 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.os.Bundle
 import android.view.View
+import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.UserRegistrationConfirmationFragmentBinding
 
 class UserRegistrationConfirmationFragment :

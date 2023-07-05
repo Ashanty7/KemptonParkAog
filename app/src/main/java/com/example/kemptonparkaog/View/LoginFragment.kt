@@ -2,7 +2,7 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -12,6 +12,7 @@ import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment(R.layout.login_fragment) {

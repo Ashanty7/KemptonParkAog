@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.kemptonparkaog.WelcomeFragment"
+        android:name="com.example.kemptonparkaog.View.WelcomeFragment"
         tools:layout="@layout/welcome_fragment">
 
         <action
@@ -21,14 +21,14 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.kemptonparkaog.LoginFragment"
+        android:name="com.example.kemptonparkaog.View.LoginFragment"
         tools:layout="@layout/login_fragment">
 
     </fragment>
 
     <fragment
         android:id="@+id/userRegistrationDetailsFragment"
-        android:name="com.example.kemptonparkaog.UserRegistrationDetailsFragment"
+        android:name="com.example.kemptonparkaog.View.UserRegistrationDetailsFragment"
         tools:layout="@layout/user_registration_details_fragment">
 
         <action
@@ -38,7 +38,7 @@
 
     <fragment
         android:id="@+id/userRegistrationConfirmationFragment"
-        android:name="com.example.kemptonparkaog.UserRegistrationConfirmationFragment"
+        android:name="com.example.kemptonparkaog.View.UserRegistrationConfirmationFragment"
         tools:layout="@layout/user_registration_confirmation_fragment">
 
         <action

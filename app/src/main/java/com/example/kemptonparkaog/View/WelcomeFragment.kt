@@ -2,7 +2,7 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -14,6 +14,7 @@ import android.text.style.ClickableSpan
 import android.text.style.StyleSpan
 import android.view.View
 import androidx.navigation.fragment.findNavController
+import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.WelcomeFragmentBinding
 
 class WelcomeFragment : BaseFragment(R.layout.welcome_fragment) {

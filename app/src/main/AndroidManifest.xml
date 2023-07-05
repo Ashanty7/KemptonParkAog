@@ -13,7 +13,7 @@
         android:theme="@style/Theme.KemptonParkAog"
         tools:targetApi="31">
         <activity
-            android:name=".WelcomeActivity"
+            android:name=".View.WelcomeActivity"
             android:exported="true"
             android:theme="@style/Theme.KemptonParkAogLauncher">
             <intent-filter>

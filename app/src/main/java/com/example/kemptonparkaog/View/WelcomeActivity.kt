@@ -2,7 +2,7 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.os.Bundle
 import android.view.View
@@ -13,6 +13,7 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.WelcomeActivityBinding
 
 class WelcomeActivity : AppCompatActivity(R.layout.welcome_activity) {

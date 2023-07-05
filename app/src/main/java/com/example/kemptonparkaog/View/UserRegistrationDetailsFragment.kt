@@ -2,12 +2,13 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog
+package com.example.kemptonparkaog.View
 
 import android.os.Bundle
 import android.view.View
 import android.widget.ArrayAdapter
 import androidx.navigation.fragment.findNavController
+import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.UserRegistrationDetailsFragmentBinding
 
 class UserRegistrationDetailsFragment : BaseFragment(R.layout.user_registration_details_fragment) {
