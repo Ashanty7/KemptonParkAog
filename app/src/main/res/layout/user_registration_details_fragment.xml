@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -132,17 +133,30 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/prayerRequestEditText" />
 
-        <Spinner
-            android:id="@+id/genderSpinner"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/genderTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/medium_space"
-            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginTop="@dimen/small_space"
             android:layout_marginEnd="@dimen/medium_space"
-            android:spinnerMode="dropdown"
+            android:hint="Select one"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/genderTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/genderTextView">
+
+            <AutoCompleteTextView
+                android:id="@+id/genderAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/maritalStatusTextView"
@@ -153,20 +167,32 @@
             android:text="Marital Status:"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/genderSpinner" />
+            app:layout_constraintTop_toBottomOf="@+id/genderTextInputLayout" />
 
-        <Spinner
-            android:id="@+id/maritalStatusSpinner"
-            android:layout_width="match_parent"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/maritalStatusTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/medium_space"
-            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginTop="@dimen/small_space"
             android:layout_marginEnd="@dimen/medium_space"
-            android:spinnerMode="dropdown"
+            android:hint="Select one"
+            android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/maritalStatusTextView" />
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusTextView">
+
+            <AutoCompleteTextView
+                android:id="@+id/maritalStatusAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:inputType="none" />
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/physicalAddressTextView"
@@ -178,7 +204,7 @@
             android:text="Your physical address"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/maritalStatusSpinner" />
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusTextInputLayout" />
 
         <EditText
             android:id="@+id/physicalAddressNumberEditText"

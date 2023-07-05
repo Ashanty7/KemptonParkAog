@@ -19,12 +19,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="Shanty Nkwana"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/nameLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="Shanty Nkwana" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/nameLabelTextView"
@@ -49,12 +50,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="086 789 0867"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/contactLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nameLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="086 789 0867" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/contactLabelTextView"
@@ -79,12 +81,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="abc@gmail.com"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/emailLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/contactLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="abc@gmail.com" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/emailLabelTextView"
@@ -109,12 +112,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="I want to get more closer t God"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/PrayerRequestLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/emailLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="I want to get more closer t God" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/PrayerRequestLabelTextView"
@@ -139,12 +143,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="Female"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/genderLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/PrayerRequestLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="Female" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/genderLabelTextView"
@@ -169,12 +174,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="Married"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/maritalStatusLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/genderLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="Married" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/maritalStatusLabelTextView"
@@ -199,12 +205,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="3298 kgotso street"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/physicalAddressLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/maritalStatusLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="3298 kgotso street" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/physicalAddressLabelTextView"
@@ -229,12 +236,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="Yes"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/visitorLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/physicalAddressLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="Yes" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/visitorLabelTextView"
@@ -259,12 +267,13 @@
             android:layout_marginStart="@dimen/medium_space"
             android:layout_marginTop="@dimen/medium_space"
             android:layout_marginEnd="@dimen/medium_space"
+            android:text="No"
+            android:textColor="@color/black"
             app:layout_constraintBottom_toTopOf="@id/homeLabelTextView"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/visitorLabelTextView"
-            app:layout_goneMarginBottom="@dimen/small_space"
-            tools:text="No" />
+            app:layout_goneMarginBottom="@dimen/small_space" />
 
         <TextView
             android:id="@+id/homeLabelTextView"

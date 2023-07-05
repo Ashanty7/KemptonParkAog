@@ -17,19 +17,4 @@
     <string name="email_address">Email</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot password?</string>
-
-    <!-- string arrays -->
-    <string-array name="gender">
-        <item>Select option</item>
-        <item>Male</item>
-        <item>Female</item>
-    </string-array>
-
-    <string-array name="marital_status">
-        <item>Select option</item>
-        <item>Single</item>
-        <item>Married</item>
-        <item>Divorced</item>
-        <item>Widowed</item>
-    </string-array>
 </resources>
