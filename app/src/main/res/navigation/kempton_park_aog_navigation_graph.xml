@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.kemptonparkaog.View.WelcomeFragment"
+        android:name="com.example.kemptonparkaog.view.WelcomeFragment"
         tools:layout="@layout/welcome_fragment">
 
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.kemptonparkaog.View.LoginFragment"
+        android:name="com.example.kemptonparkaog.view.LoginFragment"
         tools:layout="@layout/login_fragment">
 
         <action
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/userRegistrationDetailsFragment"
-        android:name="com.example.kemptonparkaog.View.UserRegistrationDetailsFragment"
+        android:name="com.example.kemptonparkaog.view.UserRegistrationDetailsFragment"
         tools:layout="@layout/user_registration_details_fragment">
 
         <action
@@ -41,7 +41,7 @@
 
     <fragment
         android:id="@+id/userRegistrationConfirmationFragment"
-        android:name="com.example.kemptonparkaog.View.UserRegistrationConfirmationFragment"
+        android:name="com.example.kemptonparkaog.view.UserRegistrationConfirmationFragment"
         tools:layout="@layout/user_registration_confirmation_fragment">
 
         <action
@@ -51,7 +51,7 @@
 
     <fragment
         android:id="@+id/successfulRegistrationFragment"
-        android:name="com.example.kemptonparkaog.View.CustomDialogFragment"
+        android:name="com.example.kemptonparkaog.view.CustomDialogFragment"
         tools:layout="@layout/custom_dialog_fragment">
 
         <action
@@ -61,7 +61,7 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.kemptonparkaog.View.MainFragment"
+        android:name="com.example.kemptonparkaog.view.MainFragment"
         tools:layout="@layout/main_fragment">
 
     </fragment>

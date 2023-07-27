@@ -1,4 +1,4 @@
-package com.example.kemptonparkaog.View
+package com.example.kemptonparkaog.view
 
 import android.content.Context
 import androidx.annotation.LayoutRes

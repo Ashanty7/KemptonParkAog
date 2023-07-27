@@ -2,7 +2,7 @@
  * //By Shantell Nkwana
  * //2023
  */
-package com.example.kemptonparkaog.View
+package com.example.kemptonparkaog.view
 
 import android.graphics.Typeface
 import android.os.Bundle
