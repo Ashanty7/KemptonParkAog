@@ -15,7 +15,16 @@ class UserRegistrationConfirmationFragment :
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding = UserRegistrationConfirmationFragmentBinding.bind(view)
         welcomeActivity.showToolBar()
         welcomeActivity.setToolBarTitle("Confirmation Information")
+
+        setOnClickListeners()
+    }
+
+    private fun setOnClickListeners() {
+        binding.continueButton.setOnClickListener {
+            CustomDialogFragment().show(childFragmentManager, CustomDialogFragment.TAG)
+        }
     }
 }

@@ -11,18 +11,26 @@ import android.text.SpannableString
 import android.text.style.ForegroundColorSpan
 import android.text.style.StyleSpan
 import android.view.View
-import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.example.kemptonparkaog.R
 import com.example.kemptonparkaog.databinding.LoginFragmentBinding
 
-class LoginFragment : Fragment(R.layout.login_fragment) {
+class LoginFragment : BaseFragment(R.layout.login_fragment) {
     private lateinit var binding: LoginFragmentBinding
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding = LoginFragmentBinding.bind(view)
 
+        welcomeActivity.hideToolBar()
         makeTextClickableAndChangeTextColor()
+        setOnclickListeners()
+    }
+
+    private fun setOnclickListeners() {
+        binding.loginLayout.loginButton.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_mainFragment)
+        }
     }
 
     private fun makeTextClickableAndChangeTextColor() {

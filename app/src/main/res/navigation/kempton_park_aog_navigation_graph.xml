@@ -24,6 +24,9 @@
         android:name="com.example.kemptonparkaog.View.LoginFragment"
         tools:layout="@layout/login_fragment">
 
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
 
     <fragment
@@ -42,7 +45,24 @@
         tools:layout="@layout/user_registration_confirmation_fragment">
 
         <action
-            android:id="@+id/action_userRegistrationFragment_to_userRegistrationConfirmationFragment"
-            app:destination="@id/userRegistrationConfirmationFragment" />
+            android:id="@+id/action_userRegistrationConfirmationFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/successfulRegistrationFragment"
+        android:name="com.example.kemptonparkaog.View.CustomDialogFragment"
+        tools:layout="@layout/custom_dialog_fragment">
+
+        <action
+            android:id="@+id/action_successfulRegistrationFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.kemptonparkaog.View.MainFragment"
+        tools:layout="@layout/main_fragment">
+
     </fragment>
 </navigation>
