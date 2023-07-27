@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/medium_space"
+        app:cardCornerRadius="@dimen/normal_space"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/off_white">
+
+            <TextView
+                android:id="@+id/dayTextView"
+                style="@style/TitleTextBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_space"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:layout_marginEnd="@dimen/medium_space"
+                android:gravity="center"
+                android:text="Today"
+                app:layout_constraintEnd_toStartOf="@+id/cardViewGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/dividerLineView"
+                android:layout_width="1dp"
+                android:layout_height="165dp"
+                android:layout_margin="@dimen/small_space"
+                android:background="@color/grey"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.026"
+                app:layout_constraintStart_toEndOf="@+id/dayTextView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/timeTextView"
+                style="@style/Medium_Text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_space"
+                android:layout_marginEnd="@dimen/medium_space"
+                android:gravity="center"
+                android:text="18:30 pm"
+                app:layout_constraintEnd_toStartOf="@+id/cardViewGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dayTextView" />
+
+            <ImageView
+                android:id="@+id/dateImageView"
+                android:layout_width="99dp"
+                android:layout_height="92dp"
+                android:layout_marginTop="@dimen/tiny_space"
+                android:contentDescription="date image"
+                android:src="@drawable/ic_circle"
+                app:layout_constraintEnd_toStartOf="@+id/cardViewGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                style="@style/TitleTextBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_space"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="@dimen/medium_space"
+                android:gravity="center"
+                android:text="27"
+                android:textSize="@dimen/huge_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/cardViewGuideline"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/timeTextView" />
+
+            <TextView
+                android:id="@+id/monthTextView"
+                style="@style/HeadingTextBold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="May"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/toolbar_text_size"
+                app:layout_constraintEnd_toStartOf="@+id/cardViewGuideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateImageView" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/cardViewGuideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="125dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

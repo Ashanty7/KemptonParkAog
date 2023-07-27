@@ -15,7 +15,7 @@
         <activity
             android:name=".view.WelcomeActivity"
             android:exported="true"
-            android:theme="@style/Theme.KemptonParkAogLauncher">
+            android:theme="@style/Theme.KemptonParkAog">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
