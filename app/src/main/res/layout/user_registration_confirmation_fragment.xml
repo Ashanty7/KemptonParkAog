@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nameContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Shanty Nkwana"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/nameLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/nameLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Name and Surname"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/contactContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="086 789 0867"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/contactLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/contactLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Contact number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/emailContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="abc@gmail.com"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/emailLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contactLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/emailLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/prayerRequestContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="I want to get more closer t God"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/PrayerRequestLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/PrayerRequestLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Prayer Request"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/prayerRequestContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/genderContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Female"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/genderLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PrayerRequestLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/genderLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Gender"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/maritalStatusContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Married"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/maritalStatusLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/genderLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/maritalStatusLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Marital Status"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/physicalAddressContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="3298 kgotso street"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/physicalAddressLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/maritalStatusLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/physicalAddressLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="Your physical address"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/physicalAddressContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/visitorContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="Yes"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/visitorLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/physicalAddressLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/visitorLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/small_space"
+            android:text="I am visiting?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visitorContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/homeContentTextView"
+            style="@style/MediumLargeText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/medium_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:text="No"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@id/homeLabelTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/visitorLabelTextView"
+            app:layout_goneMarginBottom="@dimen/small_space" />
+
+        <TextView
+            android:id="@+id/homeLabelTextView"
+            style="@style/SmallTextMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_space"
+            android:layout_marginTop="@dimen/tiny_space"
+            android:layout_marginEnd="@dimen/medium_space"
+            android:layout_marginBottom="@dimen/medium_space"
+            android:text="Would like to make KPAOG my spiritual home?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeContentTextView"
+            app:layout_goneMarginTop="@dimen/small_space" />
+
+        <Button
+            android:id="@+id/continueButton"
+            android:layout_width="338dp"
+            android:layout_height="70dp"
+            android:layout_margin="@dimen/medium_space"
+            android:padding="@dimen/medium_space"
+            android:text="Continue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/homeLabelTextView"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -14,5 +14,7 @@
     <string name="email_logo">Email logo</string>
     <string name="facebook_logo">Facebook logo</string>
     <string name="whatsapp_logo">WhatsApp logo</string>
-
+    <string name="email_address">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
 </resources>

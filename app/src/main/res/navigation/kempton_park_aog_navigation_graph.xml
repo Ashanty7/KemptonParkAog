@@ -7,20 +7,42 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.kemptonparkaog.WelcomeFragment"
+        android:name="com.example.kemptonparkaog.View.WelcomeFragment"
         tools:layout="@layout/welcome_fragment">
 
         <action
             android:id="@+id/action_welcomeFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
-            app:popUpTo="@id/welcomeFragment"
-            app:popUpToInclusive="true" />
+            app:destination="@id/loginFragment" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_userRegistrationFragment"
+            app:destination="@id/userRegistrationDetailsFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.kemptonparkaog.LoginFragment"
+        android:name="com.example.kemptonparkaog.View.LoginFragment"
         tools:layout="@layout/login_fragment">
 
+    </fragment>
+
+    <fragment
+        android:id="@+id/userRegistrationDetailsFragment"
+        android:name="com.example.kemptonparkaog.View.UserRegistrationDetailsFragment"
+        tools:layout="@layout/user_registration_details_fragment">
+
+        <action
+            android:id="@+id/action_userRegistrationDetailsFragment_to_userRegistrationConfirmationFragment"
+            app:destination="@id/userRegistrationConfirmationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/userRegistrationConfirmationFragment"
+        android:name="com.example.kemptonparkaog.View.UserRegistrationConfirmationFragment"
+        tools:layout="@layout/user_registration_confirmation_fragment">
+
+        <action
+            android:id="@+id/action_userRegistrationFragment_to_userRegistrationConfirmationFragment"
+            app:destination="@id/userRegistrationConfirmationFragment" />
     </fragment>
 </navigation>

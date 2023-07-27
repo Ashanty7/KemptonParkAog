@@ -90,4 +90,12 @@
         <item name="android:padding">12dp</item>
         <item name="android:textAllCaps">false</item>
     </style>
+
+    <style name="ToolBarTextBold" parent="Bold_Text">
+        <item name="android:textSize">@dimen/toolbar_text_size</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="titleTextAppearance">@style/ToolBarTextBold</item>
+    </style>
 </resources>
